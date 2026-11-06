@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1a120e">
+<title>Banu · Telegram</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100svh;padding:40px 24px;
+  display:grid;place-items:center;
+  font-family:Arial,sans-serif;background:#1a120e;
+  background-image:
+    radial-gradient(ellipse at 15% 25%,#a3673d66,transparent 48%),
+    radial-gradient(ellipse at 85% 80%,#6b4a2e66,transparent 45%);
+}
+main{position:relative;width:min(100%,480px);isolation:isolate}
+main::before,main::after{
+  content:"";position:absolute;inset:-18px 12px 18px;
+  border-radius:56px;z-index:-1;transform:rotate(-5deg);
+  background:linear-gradient(120deg,#a88462,#6b4a2e);
+}
+main::after{
+  inset:-33px 27px 33px;z-index:-2;transform:rotate(-9deg);
+  background:linear-gradient(120deg,#503321,#2c1d14);
+}
+a{
+  display:flex;flex-direction:column;align-items:center;
+  gap:22px;padding:48px 20px 28px;border-radius:56px;
+  color:#2b1d14;text-decoration:none;
+  background:linear-gradient(130deg,#f0dfc8,#d5c4ae 65%,#bca083);
+  box-shadow:0 30px 80px #0008,inset 0 2px 1px #fff8;
+  transition:transform .2s;
+}
+a:hover{transform:translateY(-6px)}
+a:active{transform:scale(.98)}
+a:focus-visible{outline:3px solid white;outline-offset:8px}
+.icon{
+  width:86px;height:86px;border-radius:50%;
+  display:grid;place-items:center;background:#3a2418;color:#ead8c0;
+}
+.icon svg{width:44px;height:44px}
+h1{margin:0;font-size:clamp(26px,7vw,40px);letter-spacing:-1px}
+.handle{font-size:18px;color:#61452f}
+.arrow{
+  width:58px;height:58px;border:1px solid #3a241840;
+  border-radius:50%;display:grid;place-items:center;font-size:30px;
+}
+@media(prefers-reduced-motion:reduce){a{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <a href="https://t.me/banu_sis" aria-label="Telegram-ға өту: @banu_sis">
+    <span class="icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="m21.6 3.5-3.3 16c-.3 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.2.3-.4.5-.9.5l.3-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.7 13l-4.9-1.5c-1.1-.4-1.1-1.1.2-1.6l19-7.3c.9-.3 1.8.3 1.6.9Z"/>
+      </svg>
+    </span>
+    <h1>Telegram-ға өту</h1>
+    <span class="handle">@banu_sis</span>
+    <span class="arrow" aria-hidden="true">↗</span>
+  </a>
+</main>
+</body>
+</html>
